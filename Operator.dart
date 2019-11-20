@@ -31,8 +31,14 @@ assert(urlString.startsWith('https'),
   b = a--; // Decrement a AFTER b gets its value.
   assert(a != b); // -1 != 0
   Visibility(false);
+  var test = new Test(); 
+  var nothing = null;
+  print(test?.member);
+   print(nothing?.sdas); //null
 }
-
+class Test {
+    num member = 1;
+  }
 
 void Visibility(bool isPublic) {
   var visibility = isPublic ? 'public' : 'private';
