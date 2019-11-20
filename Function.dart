@@ -1,6 +1,12 @@
+import 'package:meta/meta.dart';
+
 List<int> _nobleGases = [1, 2, 34];
 void main(List<String> args) {
   print(isNoble(0));
+  enableFlags(
+    bold: false,
+    hidden: true
+  );
 }
 //标准函数 定义了参数的类型和返回的类型
 bool isNoble(int atomicNumber) {
@@ -12,3 +18,8 @@ isNoble1(atomicNumber) {
 }
 //使用箭头函数
 bool isNoble2(int atomicNumber) => _nobleGases[atomicNumber] != null;
+
+
+void enableFlags({@required bool bold, @required bool hidden}) {
+  print('$bold $hidden');
+}

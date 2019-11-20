@@ -1,0 +1,5 @@
+name: DartPracticalExperience
+description: Dart-Practical-Experience
+dependencies:
+  flutter:
+    sdk: flutter
