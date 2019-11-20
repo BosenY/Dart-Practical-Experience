@@ -2,6 +2,7 @@ import 'package:meta/meta.dart';
 
 List<int> _nobleGases = [1, 2, 34];
 void main(List<String> args) {
+  print(args);
   print(isNoble(0));
   enableFlags(bold: false, hidden: true);
   String say(String from, String msg,
@@ -17,6 +18,7 @@ void main(List<String> args) {
   }
 
   assert(say('Bob', 'Howdy') == 'Bob says Howdy with a carrier pigeon');
+  
 }
 
 //标准函数 定义了参数的类型和返回的类型
